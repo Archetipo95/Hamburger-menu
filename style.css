@@ -119,6 +119,10 @@ body {
 	-webkit-transition: width .5s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color .5s ease-in-out;
 	transition: width .5s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color .5s ease-in-out;
 	overflow: hidden;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
 }
 
 .menu-head.open {
@@ -160,6 +164,10 @@ body {
 	color: transparent;
 	-webkit-transition: color .25s ease-in-out;
 	transition: color .25s ease-in-out;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
 }
 
 .menu-head-link.open {
@@ -176,7 +184,7 @@ body {
 	/* menu-body */
 	.menu-body {
 		position: fixed;
-		//height: 0px;
+		height: 0px;
 		top: 4.5rem;
 		left: .5rem;
 		-webkit-user-select: none;
@@ -185,17 +193,16 @@ body {
 		user-select: none;
 		z-index: 10;
 		width: calc(100% - 1rem);
-		-webkit-transition: background-color .25s ease-in-out .5s;
-		transition: background-color .25s ease-in-out .5s;
+		-webkit-transition: background-color .4s ease-in-out, .25s height ease-in-out;
+		transition: background-color .4s ease-in-out, .25s height ease-in-out;
 		border-radius: 0 0 2px 2px;
 		overflow: hidden;
 	}
 	.menu-body.open {
-		background-color: red;
-		//height: 4rem;
-		//overflow: visible;
-		-webkit-transition: background-color .25s ease-in-out .5s;
-		transition: background-color .25s ease-in-out .5s;
+		background-color: #ff6600;
+		height: 4rem;
+		-webkit-transition: background-color .4s ease-in-out .5s, .25s height ease-in-out .5s;
+		transition: background-color .4s ease-in-out .5s, .25s height ease-in-out .5s;
 	}
 	.menu-body-inner {
 		display: -webkit-box;
@@ -209,7 +216,6 @@ body {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		padding-left: 4rem;
 	}
 	.menu-body-link {
 		color: transparent;
@@ -224,15 +230,15 @@ body {
 		height: 100%;
 		text-align: center;
 		padding: 1rem 0;
-		-webkit-transition: color .25s ease-in-out .5s;
-		transition: color .25s ease-in-out .5s;
+		-webkit-transition: color .25s ease-in-out;
+		transition: color .25s ease-in-out;
 	}
 	.menu-body-link.open {
 		color: #fff;
 		-webkit-transition: color .25s ease-in-out .5s;
 		transition: color .25s ease-in-out .5s;
 	}
-	.menu-body-link li {
+	.parent1 {
 		margin: auto;
 	}
 }
