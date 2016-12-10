@@ -339,6 +339,10 @@ body {
 		border-radius: 0 0 2px 2px;
 		padding-bottom: 10px;
 	}
+	
+	
+	
+	
 	/* menu-body elements while closing */
 	.parent2 {
 		-webkit-transition-property: all;
@@ -348,86 +352,84 @@ body {
 		-webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
 		transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
 	}
-	#parent2-1.parent2 {
+	#parent2-1 {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .8s;
 		transition-delay: .8s;
 	}
-	#parent2-2.parent2 {
+	#parent2-2 {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .7s;
 		transition-delay: .7s;
 	}
-	#parent2-3.parent2 {
+	#parent2-3 {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .6s;
 		transition-delay: .6s;
 	}
-	#parent2-4.parent2 {
+	#parent2-4 {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .5s;
 		transition-delay: .5s;
 	}
-	#parent2-5.parent2 {
+	#parent2-5 {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .4s;
 		transition-delay: .4s;
 	}
 	/* menu-body elements while opening */
-	#parent2-1.parent2.open {
+	#parent2-1.open {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .4s;
 		transition-delay: .4s;
 	}
-	#parent2-2.parent2.open {
+	#parent2-2.open {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .5s;
 		transition-delay: .5s;
 	}
-	#parent2-3.parent2.open {
+	#parent2-3.open {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .6s;
 		transition-delay: .6s;
 	}
-	#parent2-4.parent2.open {
+	#parent2-4.open {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .7s;
 		transition-delay: .7s;
 	}
-	#parent2-5.parent2.open {
+	#parent2-5.open {
 		-webkit-transition-property: all;
 		transition-property: all;
 		-webkit-transition-delay: .8s;
 		transition-delay: .8s;
 	}
-}
-
-a .parent2 {
-	webkit-transition-property: all;
-	transition-property: all;
-	-webkit-transition-duration: .2s !important;
-	transition-duration: .2s !important;
-	-webkit-transition-delay: .3s !important;
-	transition-delay: .3s !important;
-}
-
-a:hover .parent2 {
-	background: #FF9800;
-	font-size: 1.5rem;
+.parent1.open + .parent2.open {
+		webkit-transition-property: all;
+		transition-property: all;
+		-webkit-transition-duration: .2s;
+		transition-duration: .2s;
+		-webkit-transition-delay: .3s;
+		transition-delay: .3s;
+	}
+	.parent2.open:hover {
+		background: #FF9800;
+		font-size: 1.5rem;
+		webkit-transition-property: all;
+		transition-property: all;
+		-webkit-transition-duration: .2s;
+		transition-duration: .2s;
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
+	}
 	
-	webkit-transition-property: all;
-	transition-property: all;
-	-webkit-transition-duration: .2s !important;
-	transition-duration: .2s !important;
-	-webkit-transition-delay: 0s !important;
-	transition-delay: 0s !important;
 }
